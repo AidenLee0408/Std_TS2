@@ -240,7 +240,7 @@ true 를 리턴한다면 그때서야 생성된 Block 을 push 한다.
 
 
 
-![](../images/README/TS수료증-16443346848941.png)
+![TS수료증-16443346848941.png](../images/README/TS수료증-16443346848941.png)
 
 
 
