@@ -238,7 +238,9 @@ true 를 리턴한다면 그때서야 생성된 Block 을 push 한다.
 
 ​	이 강의는 그런 나의 갈증을 해소해 줄 수 있어서 더할 나위 없이 좋았다. TypeScript를 공부하고 있던 나는 간단한 블록체인을 TypeScript로 만들어 볼 수 있었기 때문에 정말 많은 것을 배울 수 있었다. 만약 자신이 TypeScript를 다룰 줄 아는데 크립토와 관련된 프로그래밍 공부를 하고 싶다면 블록체인에 간단히 배울 수 있으니 강의를 한 번 들어보는 걸 추천한다. (단, TypeScript를 전혀 다룰 줄 모른다면 다른 강의를 통해 먼저 학습을 한 뒤 듣기를 권하고 싶다.)
 
-<img src="../images/README/TS수료증-16443349377072.png" alt="TS수료증" style="zoom:60%;" />
+![TS수료증](https://user-images.githubusercontent.com/89402202/153022667-0f75384d-9552-45b8-a930-db4eef5f9df5.png)
+
+<img src="../images/TS수료증-16443349377072.png" alt="TS수료증" style="zoom:60%;" />
 
 
 
