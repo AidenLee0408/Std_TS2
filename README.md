@@ -240,11 +240,9 @@ true 를 리턴한다면 그때서야 생성된 Block 을 push 한다.
 
 ![TS수료증](https://user-images.githubusercontent.com/89402202/153022667-0f75384d-9552-45b8-a930-db4eef5f9df5.png)
 
-<img src="../images/TS수료증-16443349377072.png" alt="TS수료증" style="zoom:60%;" />
 
 
 
-![TS수료증-16443346848941.png](../images/README/TS수료증-16443346848941.png)
 
 
 
