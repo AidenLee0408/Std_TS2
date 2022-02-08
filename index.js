@@ -19,7 +19,7 @@ Block.validateStructure = (aBlock) => typeof aBlock.index === "number" &&
     typeof aBlock.previousHash === "string" &&
     typeof aBlock.timestamp === "number" &&
     typeof aBlock.data === "string";
-const genesisBlock = new Block(0, "2020202020202", "", "Hello", 123456);
+const genesisBlock = new Block(0, "2020202020202", "", "First Block", 123456);
 let blockchain = [genesisBlock];
 const getBlockchain = () => blockchain;
 const getLatestBlock = () => blockchain[blockchain.length - 1];
