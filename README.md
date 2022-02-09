@@ -57,7 +57,7 @@ public 변수뒤에는 number, string 과 같은 타입을 명시해줌으로써
 const genesisBlock: Block = new Block(0, "2020202020202", "", "hello", 123456);
 ```
 
-index 자리에는 0을 입력하고 hash, previous hash, data, timestamp 자리에는 임의값을 입력함으로써 첫번째 블록을 생성 시켜줍니다. 
+index 자리에는 0을 입력하고 hash, previous hash, data, timestamp 자리에는 임의값을 입력함으로써 첫번째 블록을 생성시켜 줍니다. 
 <br><br>
 
 
