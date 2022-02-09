@@ -1,5 +1,5 @@
 # 타입스크립트 스터디노트 2
- 노마드코더님의 [Typescript로 블록체인 만들기 강의](https://nomadcoders.co/typescript-for-beginners/lobby) 중 블록체인 코딩 과정을 스터디 노트로 작성한 것입니다.
+ 노마드코더님의 [Typescript로 블록체인 만들기 강의](https://nomadcoders.co/typescript-for-beginners/lobby) 중 블록체인 코딩 과정을 스터디 노트로 기록한 것입니다.
 <br><br>
 
 
