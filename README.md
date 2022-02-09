@@ -109,7 +109,7 @@ const createNewBlock = (data: string): Block => {
 ```
 
 createNewBlock의 데이터 타입이 string 인지 확인을 한 뒤 Block 타입을 명시해주고 새 블록에 구조를 만들어줍니다.<br>
-이후 newHash를 생성하기위해 필요한 인자들을 받아오고 newBlock에도 필요한 인자를 받아 온 뒤 블록을 추가하고 newBlock을  리턴시키게 되면 새로운 블록을 생성 하게된다.
+이후 newHash를 생성하기위해 필요한 인자들을 받아오고 newBlock에도 필요한 인자를 받아 온 뒤 블록을 추가하고 newBlock을  리턴시키게 되면 새로운 블록을 생성하게 된다.
 <br><br>
 
 
@@ -178,7 +178,7 @@ candidateBlock과 최근에 만들어진 getLatestBlock을 비교하여 참이�
   console.log(blockchain);
 ```
 
-createNewBlock으로 블록들을 생성해주고 블록체인이 제대로 작동하는지 확인하기 위하여 console.log를 입력해 블록체인을 실행 시켜줍니다.
+createNewBlock으로 블록들을 생성해주고 블록체인이 제대로 작동하는지 확인하기 위하여 console.log를 입력해 블록체인을 실행시켜 줍니다.
 <br><br>
 
 
