@@ -44,11 +44,12 @@ class Block {
   }
 ```
 
-static 메소드 2개와 public 변수 5개와 Block의 구조를 입력해준다.
+static 메소드 2개와 public 변수 5개와 Block의 구조를 입력을 해줍니다.
 
-calculateBlockHash 메소드로 내가 직접 블록을 생성하지 않아도 사용가능한 메소드를 만들 수 있다.
-validateStructure 메소드는 생성된 Block이 유효한지 판단해준다.
-public 변수뒤에 number, string 와같은 타입을 명시해줌으로써 에러를 방지하고 constructor 안에 public 변수들의 내용들을 그대로 가져다가 구조를 만들어준다.
+정적 타입인 calculateBlockHash 메소드는 내가 직접 블록을 생성하지 않아도 사용가능한 메소드를 만들 수 있게 해주고 
+정적 타입인 validateStructure 메소드는 생성된 Block이 유효한지 판단 해줍니다.
+
+public 변수뒤에 number, string 과 같은 타입을 명시해줌으로써 에러를 방지하고 constructor 안에는 public 변수들의 내용들을 그대로 가져다가 입력해줌으로써 Block 구조를 완성해준다.
 
 
 
@@ -109,7 +110,7 @@ const createNewBlock = (data: string): Block => {
   };
 ```
 
-createNewBlock의 데이터 타입이 string 인지 확인을 한 뒤 새 블록에 구조를 만들어준다.
+createNewBlock의 데이터 타입이 string 인지 확인을 한 뒤 Block 타입을 명시해주고 새 블록에 구조를 만들어준다.
 
 이후 newHash를 생성하기위해 필요한 인자들을 받아오고 newBlock에도 필요한 인자를 받아 온 뒤 블록을 추가하고 newBlock을  리턴시키게 되면 새로운 블록을 생성하게 된다.
 
@@ -227,7 +228,7 @@ createNewBlock으로 블록들을 생성해주고 블록체인이 제대로 작�
 
 터미널에 npm start를 입력하여 실행을 시켜보면 1~3까지 새로운 블록들이 정상적으로 체이닝 된 것을 알 수 있다. 3번의 previous hash를 보면 2번의 hash가 있는 것을 볼 수 있고 2번의 previous hash를 보면 1번의 hash가 있는것을 알 수 있다. 이런 hash를 이용하여 블록들이 연결된 것을 블록체인이라고 한다. (어디까지나 블록체인의 일부이다.)
 
-이와같이 TypeScript로 블록체인을 만들게되면 이 코드가 어떻게 흘러가는지, 블럭의 속성과 타입, function의 리턴 타입 등이 보이기 때문에 가독성이 좋아져서 혼란스럽지않게 파악이 가능하다.
+이와같이 TypeScript로 블록체인을 만들게되면 이 코드가 어떻게 흘러가는지, 블럭의 속성과 타입, function의 리턴 타입 등이 보이기 때문에 가독성이 좋아져서 혼란스럽지 않게 파악이 가능하다는 장점이 큰 것 같다.
 
 
 
