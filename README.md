@@ -122,7 +122,7 @@ createNewBlock의 데이터 타입이 string 인지 확인을 한 뒤 Block 타�
   aBlock.timestamp, 
   aBlock.data);
 ```
-<br><br>
+<br>
 
 
 ## Block 구조 검증하기
@@ -147,7 +147,6 @@ const isBlockVaild = (
 ```
 
 블록이 유효하다면 구조를 차례대로 검증을 합니다. 
-
 유효하지 않다면 false를 리턴,
 이전 블록의  index + 1이  candidateBlock.index와 일치하지 않는다면 false를 리턴,
 이전 블록의 hash가 andidateBlock.previousHash와 일치하지 않는다면 false를 리턴,
