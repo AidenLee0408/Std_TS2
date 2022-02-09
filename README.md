@@ -45,10 +45,8 @@ class Block {
 ```
 
 static 메소드 2개와 public 변수 5개와 Block의 구조를 입력을 해줍니다.
-
 정적 타입인 calculateBlockHash 메소드는 내가 직접 블록을 생성하지 않아도 사용가능한 메소드를 만들 수 있게 해주고 
 정적 타입인 validateStructure 메소드는 생성된 Block이 유효한지 판단 해줍니다.
-
 public 변수뒤에 number, string 과 같은 타입을 명시해줌으로써 에러를 방지하고 constructor 안에는 public 변수들의 내용들을 그대로 가져다가 입력해줌으로써 Block 구조를 완성해준다.
 
 
@@ -85,6 +83,7 @@ getNewTimeStamp : 새로운 현재의 타임스탬프를 얻는다.
 
 
 
+
 ## 새로운 Block 생성
 
 ```
@@ -111,7 +110,6 @@ const createNewBlock = (data: string): Block => {
 ```
 
 createNewBlock의 데이터 타입이 string 인지 확인을 한 뒤 Block 타입을 명시해주고 새 블록에 구조를 만들어준다.
-
 이후 newHash를 생성하기위해 필요한 인자들을 받아오고 newBlock에도 필요한 인자를 받아 온 뒤 블록을 추가하고 newBlock을  리턴시키게 되면 새로운 블록을 생성하게 된다.
 
 
@@ -152,13 +150,9 @@ const isBlockVaild = (
 블록이 유효하다면 구조를 검증한다. 
 
 유효하지 않다면 false를 리턴,
-
 이전 블록의  index + 1이  candidateBlock.index와 일치하지 않는다면 false를 리턴,
-
 이전 블록의 hash가 andidateBlock.previousHash와 일치하지 않는다면 false를 리턴,
-
 hash를 계산했는데 다른 hash를 가지고 있다면 false를 리턴,
-
 이 모든 구조를 통과했다면 true를 리턴하여 push한다.
 
 
@@ -232,7 +226,9 @@ createNewBlock으로 블록들을 생성해주고 블록체인이 제대로 작�
 
 
 
+
 > 개인적인 소감
+
 
 ​	평소에 웹3와 메타버스에 대한 관심이 많았다. 이와 관련된 서비스를 만들고 싶었기 때문에 크립토, 블록체인 기술, NFT 등 웹 3와 메타버스의 핵심 기술에 대하여 많은 영상들을 보고 관련 소식들을 팔로잉 했었다. 그럼에도 불구하고 블록체인을 직접적으로 만들어 볼 엄두를 내지 못했었다. 프론트엔드에 대한 역량조차 아직 부족하다고 생각하여 나의 타스크를 좀 더 발전시키고 집중하고 싶었기 때문이다. 
 
