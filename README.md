@@ -48,9 +48,8 @@ static 메소드 2개와 public 변수 5개와 Block의 구조를 입력을 해�
 정적 타입인 calculateBlockHash 메소드는 내가 직접 블록을 생성하지 않아도 사용가능한 메소드를 만들 수 있게 해주고 
 정적 타입인 validateStructure 메소드는 생성된 Block이 유효한지 판단 해줍니다.
 public 변수뒤에는 number, string 과 같은 타입을 명시해줌으로써 에러를 방지하고 constructor 안에는 public 변수들의 내용들을 그대로 가져다가 입력해줌으로써 Block 구조를 완성해줍니다.
-
-
 <br>
+
 ## 첫 번째 Block 생성
 
 ```
