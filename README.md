@@ -47,7 +47,7 @@ class Block {
 static 메소드 2개와 public 변수 5개와 Block의 구조를 입력을 해줍니다. <br>
 정적 타입인 calculateBlockHash 메소드는 내가 직접 블록을 생성하지 않아도 사용가능한 메소드를 만들 수 있게 해주고 
 정적 타입인 validateStructure 메소드는 생성된 Block이 유효한지 판단 해줍니다.
-public 변수뒤에는 number, string 과 같은 타입을 명시해줌으로써 에러를 방지하고 constructor 안에는 public 변수들의 내용들을 그대로 가져다가 입력해줌으로써 Block 구조를 완성해준다.
+public 변수뒤에는 number, string 과 같은 타입을 명시해줌으로써 에러를 방지하고 constructor 안에는 public 변수들의 내용들을 그대로 가져다가 입력해줌으로써 Block 구조를 완성해줍니다.
 
 
 
@@ -57,7 +57,7 @@ public 변수뒤에는 number, string 과 같은 타입을 명시해줌으로써
 const genesisBlock: Block = new Block(0, "2020202020202", "", "hello", 123456);
 ```
 
-index 자리에는 0을 입력하고 hash, previous hash, data, timestamp 자리에는 임의값을 입력함으로써 첫번째 블록을 생성시켜준다. 
+index 자리에는 0을 입력하고 hash, previous hash, data, timestamp 자리에는 임의값을 입력함으로써 첫번째 블록을 생성 시켜줍니다. 
 
 
 
@@ -67,7 +67,7 @@ index 자리에는 0을 입력하고 hash, previous hash, data, timestamp 자리
 let blockchain: Block[] = [genesisBlock];
 ```
 
-다음과 같이 값을 입력하여 Block만 블록체인에 추가할 수 있도록 하였다.
+다음과 같이 값을 입력하여 Block만 블록체인에 추가할 수 있도록 하였습니다.
 
 ```
 const getBlockchain = (): Block[] => blockchain;
@@ -109,8 +109,8 @@ const createNewBlock = (data: string): Block => {
   };
 ```
 
-createNewBlock의 데이터 타입이 string 인지 확인을 한 뒤 Block 타입을 명시해주고 새 블록에 구조를 만들어준다.
-이후 newHash를 생성하기위해 필요한 인자들을 받아오고 newBlock에도 필요한 인자를 받아 온 뒤 블록을 추가하고 newBlock을  리턴시키게 되면 새로운 블록을 생성하게 된다.
+createNewBlock의 데이터 타입이 string 인지 확인을 한 뒤 Block 타입을 명시해주고 새 블록에 구조를 만들어줍니다.
+이후 newHash를 생성하기위해 필요한 인자들을 받아오고 newBlock에도 필요한 인자를 받아 온 뒤 블록을 추가하고 newBlock을  리턴시키게 되면 새로운 블록을 생성하게 다.
 
 
 
@@ -147,7 +147,7 @@ const isBlockVaild = (
   };
 ```
 
-블록이 유효하다면 구조를 검증한다. 
+블록이 유효하다면 구조를 차례대로 검증을 합니다. 
 
 유효하지 않다면 false를 리턴,
 이전 블록의  index + 1이  candidateBlock.index와 일치하지 않는다면 false를 리턴,
@@ -167,7 +167,7 @@ const addBlock = (candidateBlock: Block) : void => {
   }
 ```
 
-candidateBlock과 최근에 만들어진 getLatestBlock을 비교하여 참이라면 생성된 Block을 push하여 블록을 블록체인에 추가하게 된다.
+candidateBlock과 최근에 만들어진 getLatestBlock을 비교하여 참이라면 생성된 Block을 push하여 블록을 블록체인에 추가하게 됩니다.
 
 
 
@@ -181,7 +181,7 @@ candidateBlock과 최근에 만들어진 getLatestBlock을 비교하여 참이�
   console.log(blockchain);
 ```
 
-createNewBlock으로 블록들을 생성해주고 블록체인이 제대로 작동하는지 확인하기 위하여 console.log를 입력해 블록체인을 실행시켜준다.
+createNewBlock으로 블록들을 생성해주고 블록체인이 제대로 작동하는지 확인하기 위하여 console.log를 입력해 블록체인을 실행 시켜줍니다.
 
 
 
