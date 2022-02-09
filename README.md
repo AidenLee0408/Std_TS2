@@ -50,7 +50,7 @@ static 메소드 2개와 public 변수 5개와 Block의 구조를 입력을 해�
 public 변수뒤에는 number, string 과 같은 타입을 명시해줌으로써 에러를 방지하고 constructor 안에는 public 변수들의 내용들을 그대로 가져다가 입력해줌으로써 Block 구조를 완성해줍니다.
 
 
-
+<br>
 ## 첫 번째 Block 생성
 
 ```
@@ -60,7 +60,7 @@ const genesisBlock: Block = new Block(0, "2020202020202", "", "hello", 123456);
 index 자리에는 0을 입력하고 hash, previous hash, data, timestamp 자리에는 임의값을 입력함으로써 첫번째 블록을 생성 시켜줍니다. 
 
 
-
+<br>
 ## 블록체인 생성
 
 ```
@@ -82,8 +82,7 @@ getLatestBlock : 블록체인에 가장 최근에 생성된 Block을 얻는다.
 getNewTimeStamp : 새로운 현재의 타임스탬프를 얻는다.
 
 
-
-
+<br>
 ## 새로운 Block 생성
 
 ```
@@ -113,7 +112,7 @@ createNewBlock의 데이터 타입이 string 인지 확인을 한 뒤 Block 타�
 이후 newHash를 생성하기위해 필요한 인자들을 받아오고 newBlock에도 필요한 인자를 받아 온 뒤 블록을 추가하고 newBlock을  리턴시키게 되면 새로운 블록을 생성하게 다.
 
 
-
+<br>
 ## Block에서 해쉬 얻기
 
 ```
@@ -156,7 +155,7 @@ hash를 계산했는데 다른 hash를 가지고 있다면 false를 리턴,
 이 모든 구조를 통과했다면 true를 리턴하여 push한다.
 
 
-
+<br>
 ## 블록체인에 블록 추가하기
 
 ```
@@ -170,7 +169,7 @@ const addBlock = (candidateBlock: Block) : void => {
 candidateBlock과 최근에 만들어진 getLatestBlock을 비교하여 참이라면 생성된 Block을 push하여 블록을 블록체인에 추가하게 됩니다.
 
 
-
+<br>
 ## 마무리
 
 ```
@@ -184,7 +183,7 @@ candidateBlock과 최근에 만들어진 getLatestBlock을 비교하여 참이�
 createNewBlock으로 블록들을 생성해주고 블록체인이 제대로 작동하는지 확인하기 위하여 console.log를 입력해 블록체인을 실행 시켜줍니다.
 
 
-
+<br>
 ## 실행 결과
 
 ```
