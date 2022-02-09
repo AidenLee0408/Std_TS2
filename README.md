@@ -150,8 +150,8 @@ const isBlockVaild = (
 유효하지 않다면 false를 리턴,
 이전 블록의  index + 1이  candidateBlock.index와 일치하지 않는다면 false를 리턴,
 이전 블록의 hash가 andidateBlock.previousHash와 일치하지 않는다면 false를 리턴,
-hash를 계산했는데 다른 hash를 가지고 있다면 false를 리턴,
-이 모든 구조를 통과했다면 true를 리턴하여 push한다.
+hash를 계산했는데 다른 hash를 가지고 있다면 false를 리턴한다.
+그리고 이 구조를 통과했다면 true를 리턴하여 push 하게된다.
 <br><br>
 
 
